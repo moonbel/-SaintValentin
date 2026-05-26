@@ -1,0 +1,21 @@
+body{
+    background-color: hwb(234 57% 0%);
+    color: lab(100% 0.01 -0.01);
+    text-align: center;
+}
+
+h1{
+    border: 1px, solid, hwb(0 100% 0%);
+}
+
+output{
+    color:  hwb(0 26% 57%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    text-align: center;
+    font-weight: 600;
+}
+
+#resultado{
+    background-color: lch(92.35% 0.01 296.81);
+}
