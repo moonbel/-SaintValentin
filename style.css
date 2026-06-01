@@ -19,3 +19,6 @@ output{
 #resultado{
     background-color: lch(92.35% 0.01 296.81);
 }
+  img {
+    width: 150px;
+  }
