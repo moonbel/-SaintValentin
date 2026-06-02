@@ -1,30 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Dia dos Namorados ❤️</title>
+
     <link rel="stylesheet" href="style.css">
-    <title> coisinhas </title>
-<head>
-
+</head>
 <body>
-    <div class="stars"></div>
-    <h1>Feliz dia dos namorados</h1>
-   <p>O dia dos namorados é a data que todo casal adora, e se você está procurando um site bonitinho para mandar para sua amada você achou o lugar perfeito!!</p><code>NÓS-> </code>
-  <img src="c:\Hiza\-SaintValentin\imagem casal.jpg" alt="foto fofinha">
-  <hr>
-  <body style="
-background:linear-gradient(to right, #ffa4f0, #6d0f4e);
-height:100vh;
-">
-<div class="frasesFofnhas"></div>
-<button onclick="frasesFofnhas()">Clique aqui</button>
- <p id="frasesFofnhas" onclick="cliqueAqui()"></p>
-</header>
-</div>
 
+    <div class="container">
 
+        <section class="hero">
+            <div class="heart">🍓</div>
 
-<script src="script.js"></script>
+            <h1>𝓕𝓮𝓵𝓲𝔃 𝓓𝓲𝓪 𝓭𝓸𝓼 𝓝𝓪𝓶𝓸𝓻𝓪𝓭𝓸𝓼</h1>
+
+            <p>
+               Cada átomo do meu corpo ânsia pela energia do seu corpo
+            </p>
+
+            <button onclick="mostrarMensagem()">
+                Abrir Mensagem 💌
+            </button>
+
+            <div id="mensagem"></div>
+        </section>
+
+        <section class="card">
+            <h2>Carta aberta para o meu amor:</h2>
+
+            <p>
+           A vida com você é outra coisa, quando estou contigo o mundo fica mais leve e até o ar fica mais limpo, em meio a todo o caos da minha cabeça pertubada você foi o remédio que eu encontrei e que fez tudo se calar. Com você ao meu lado eu não sinto medo de mais nada e tudo parece possivel para mim, obrigada por existir, obrigada por ser tudo o que eu precisava e não sabia, eu te amo.
+        </section>
+
+        <section class="card">
+            <h2>Casais que me lembram nós:</h2>
+
+            <div class="gallery">
+                <img src="foto1.jpg" alt="Foto do casal">
+                <img src="foto2.jpg" alt="Foto do casal">
+                <img src="foto3.jpg" alt="Foto do casal">
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        Dedicado ao amor da minha vida S2
+    </footer>
+
+    <script>
+        function mostrarMensagem() {
+            document.getElementById("mensagem").innerHTML =
+            "Você é a melhor parte dos meus dias. Te amo! ❤️";
+        }
+    </script>
+
 </body>
 </html>
