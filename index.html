@@ -4,38 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feliz Dia dos Namorados ❤️</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div id="estrelas"></div>
+<div class="musica">
+<audio controls loop>
+    <source src="musica.mp3" type="audio/mpeg">
+</audio>
 
+<header>
+      
+    <button onclick="inicio()">abertura</button>
+
+    <button onclick="trocarTela2()">intro</button>
+    
+    <button onclick="trocarTela3()">imagens</button>
+
+    <button onclick="trocarTela4()">Carta aberta</button>
+
+    
+</header>
+</div>
     <div class="container">
 
-        <section class="hero">
+        <section id="telaInicial" class="card ativa">
             <div class="heart">🍓</div>
 
             <h1>𝓕𝓮𝓵𝓲𝔃 𝓓𝓲𝓪 𝓭𝓸𝓼 𝓝𝓪𝓶𝓸𝓻𝓪𝓭𝓸𝓼</h1>
 
             <p>
-               Cada átomo do meu corpo ânsia pela energia do seu corpo
+               Cada átomo do meu corpo ansia pela energia do seu corpo
             </p>
 
             <button onclick="mostrarMensagem()">
                 Abrir Mensagem 💌
             </button>
 
-            <div id="mensagem"></div>
+            <p id="mensagem"></p>
+
+            
         </section>
 
-        <section class="card">
+        <section id="segundaTela" class="card">
             <h2>Carta aberta para o meu amor:</h2>
 
             <p>
            A vida com você é outra coisa, quando estou contigo o mundo fica mais leve e até o ar fica mais limpo, em meio a todo o caos da minha cabeça pertubada você foi o remédio que eu encontrei e que fez tudo se calar. Com você ao meu lado eu não sinto medo de mais nada e tudo parece possivel para mim, obrigada por existir, obrigada por ser tudo o que eu precisava e não sabia, eu te amo.
+           </p>
         </section>
 
-        <section class="card">
-            <h2>Casais que me lembram nós:</h2>
+        <section id="terceiraTela" class="card" >
+            <h2>Casais fofos que remetem a nós:</h2>
 
             <div class="gallery">
                 <img src="foto1.jpg" alt="Foto do casal">
@@ -46,17 +66,22 @@
 
     </div>
 
-    <footer>
-        Dedicado ao amor da minha vida S2
-    </footer>
-    <p>Musica para ouvir: terça de tarde</p>
+    <section id="quartaTela" class="card ">
+   
+        <p>A vida ao seu lado é simples, calma igual as ondas do mar pacifico. 
+            calma igual a uma tarde de outono de uma tarde de uma quarta feira qualquer.
+           quando estamos junto, você dança na minha cabeça sua voz passa pelos meus ouvidos
+            e limpa todas a impurezas que ouvi nessa minha vida fútil e míseravel,
+           contigo eu me alimento da pureza da sua alma, e assim sacio a fome de viver que eu 
+           tenho detro de mim. Por anos achei que a vida que eu levava era tudo 
+           o que eu precisava..mas eu estava enganado todo esse tempo
+        </p>
 
-    <script>
-        function mostrarMensagem() {
-            document.getElementById("mensagem").innerHTML =
-            "Você é a melhor parte dos meus dias. Te amo! ❤️";
-        }
-    </script>
+    </section>
+
+
+<div class="mouse-light"></div>
+<script src="script.js"></script>
 
 </body>
 </html>

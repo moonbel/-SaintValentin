@@ -8,10 +8,73 @@ console.log(global)
 function funcao2(){
 console.log(global)
 // console.log(local)
+}   
+
+const starsContainer = document.getElementById("estrelas")
+
+for(let i = 0; i < 250; i++){
+
+    const estrela = document.createElement("div");
+    estrela.classList.add("estrela");
+
+    estrela.style.left = Math.random() * 100 + "vw";
+
+    estrela.style.top = Math.random() * 100 + "vh";
+
+    estrela.style.animationDelay = Math.random() * 5 + "s";
+
+    starsContainer.appendChild(estrela);
 }
-function frasesFofinhas(){
-    cont =+ frasesFofinhas <p>"A vida ao seu ladoé a melhor coisa que existe, por que contigo eu me sinto leve e os problemas da vida somem, e fica apenas você"
-    cont === frasesFofinhas
-    document.getElementById.innerHTML = cont
+
+function mostrarMensagem() {
+    document.getElementById("mensagem").innerHTML =
+    "Só conheci a felicidade quando conheci você. Obrigado por tudo meu amor";
+}
     
-}                         
+const light = document.querySelector(".mouse-light");
+
+document.addEventListener("mousemove", (e) => {
+    light.style.left = e.clientX + "px";
+    light.style.top = e.clientY + "px";
+});
+
+const luhiza = document.querySelectorAll("section")
+
+function inicio(){ 
+    luhiza.forEach(function(etapa){
+        etapa.classList.remove("ativa")
+    })
+
+}
+document.getElementById("telainicial").classList.add("ativa")
+
+
+function trocarTela2(){
+
+    luhiza.forEach(function(etapa){
+        etapa.classList.remove("ativa")
+
+    })
+
+    document.getElementById("segundaTela").classList.add("ativa")
+
+}
+
+function trocarTela3(){
+
+    luhiza.forEach(function(etapa){
+        etapa.classList.remove("ativa")
+
+    })
+
+    document.getElementById("terceiraTela").classList.add("ativa")
+
+}
+
+function trocarTela4(){
+
+    luhiza.forEach(function(etapa){
+        etapa.classList.remove("ativa")
+    })
+}
+document.getElementById("quartaTela").classList.add("ativa")
