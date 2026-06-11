@@ -41,12 +41,13 @@ document.addEventListener("mousemove", (e) => {
 const luhiza = document.querySelectorAll("section")
 
 function inicio(){ 
+
     luhiza.forEach(function(etapa){
         etapa.classList.remove("ativa")
     })
 
+    document.getElementById("telaInicial").classList.add("ativa")
 }
-document.getElementById("telainicial").classList.add("ativa")
 
 
 function trocarTela2(){
@@ -76,5 +77,5 @@ function trocarTela4(){
     luhiza.forEach(function(etapa){
         etapa.classList.remove("ativa")
     })
+    document.getElementById("quartaTela").classList.add("ativa")
 }
-document.getElementById("quartaTela").classList.add("ativa")
